@@ -33,4 +33,5 @@ var writer = new CsvOutputWriter();
 var output = writer.Gerar(resultado);
 
 // OUTPUT
+Console.WriteLine("\n\nTabela:\n");
 Console.WriteLine(output);

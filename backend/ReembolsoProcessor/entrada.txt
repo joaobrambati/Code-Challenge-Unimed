@@ -1,0 +1,21 @@
+Id,TipoProcedimento,DataProcedimento,ValorPago,ClienteId
+1,Consulta Médica,2026-04-10,200,1001
+2,Exame de Imagem,2026-04-12,800,1002
+3,Exame Laboratorial,2026-04-15,300,1003
+4,Outros,2026-04-18,1000,1004
+5,Consulta Médica,2025-12-01,250,1005
+6,Exame de Imagem,2026-04-20,600,2001
+7,Exame de Imagem,2026-04-21,600,2001
+8,Exame de Imagem,2026-04-22,600,2001
+9,Exame de Imagem,2026-04-23,600,2001
+10,Exame de Imagem,2026-04-24,600,2001
+11,Exame de Imagem,2026-04-25,600,2001
+12,Consulta Médica,2026-04-10,400,3001
+13,Consulta Médica,2026-04-11,400,3001
+14,Consulta Médica,2026-04-12,400,3001
+15,Consulta Médica,2026-04-13,400,3001
+16,Consulta Médica,2026-04-14,400,3001
+17,Consulta Médica,2026-04-15,400,3001
+18,Exame Laboratorial,2026-02-01,200,4001
+19,Outros,2026-01-15,300,4002
+20,Consulta Médica,2026-05-01,700,5001

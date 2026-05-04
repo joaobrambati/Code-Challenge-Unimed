@@ -28,15 +28,15 @@ public class CsvInputReader
 
     private TipoProcedimento MapearTipo(string tipo)
     {
-        var valor = tipo.Trim();
+        var valor = tipo.Trim().ToLower();
 
-        if (valor.Equals("Consulta Médica", StringComparison.OrdinalIgnoreCase))
+        if (valor.Contains("consulta"))
             return TipoProcedimento.ConsultaMedica;
 
-        if (valor.Equals("Exame de Imagem", StringComparison.OrdinalIgnoreCase))
+        if (valor.Contains("imagem"))
             return TipoProcedimento.ExameImagem;
 
-        if (valor.Equals("Exame Laboratorial", StringComparison.OrdinalIgnoreCase))
+        if (valor.Contains("laboratorial"))
             return TipoProcedimento.ExameLaboratorial;
 
         return TipoProcedimento.Outros;

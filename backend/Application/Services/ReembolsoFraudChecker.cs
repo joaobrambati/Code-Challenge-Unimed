@@ -28,7 +28,7 @@ public class ReembolsoFraudChecker
                         p.DataProcedimento >= pedido.DataProcedimento.AddDays(-30)
                         && (
                             p.DataProcedimento < pedido.DataProcedimento
-                            || (p.DataProcedimento == pedido.DataProcedimento && p.Id <= pedido.Id)
+                            || (p.DataProcedimento == pedido.DataProcedimento && p.Id < pedido.Id)
                         )
                     )
                     .ToList();
@@ -48,7 +48,8 @@ public class ReembolsoFraudChecker
 
                 var total = ultimos30Dias
                     .Where(p => p.Status != StatusReembolso.SuspeitoDeFraude)
-                    .Sum(p => p.ValorReembolsado);
+                    .Sum(p => p.ValorReembolsado)
+                    + pedido.ValorReembolsado;
 
                 if (total > 1500)
                 {

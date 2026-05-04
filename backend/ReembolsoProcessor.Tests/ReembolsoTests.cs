@@ -100,7 +100,7 @@ public class ReembolsoTests
     {
         var baseDate = DateTime.Today;
 
-        var lista = Enumerable.Range(0, 6)
+        var lista = Enumerable.Range(0, 7)
             .Select(i => Criar(
                 TipoProcedimento.ConsultaMedica,
                 200,

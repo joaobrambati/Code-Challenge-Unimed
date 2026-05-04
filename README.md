@@ -60,3 +60,6 @@ dotnet test
 * xUnit
 
 ---
+
+Print do resultado com Logs e Tabela
+<img width="846" height="746" alt="image" src="https://github.com/user-attachments/assets/2ca23d30-1bcb-4867-ba11-f46e67d3c6f0" />
